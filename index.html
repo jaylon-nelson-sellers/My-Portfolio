@@ -3,14 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jaylon Nelson-Sellers | Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <h1>Hello, World</h1>
-    <p>This is my portfolio.</p>
-    <p>By Jaylon Nelson-Sellers.</p>
-    <div id="data-container"></div>
+    <header>
+        <nav>
+            <div class="logo">JCNS</div>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Jaylon Christopher Nelson-Sellers</h1>
+            <h2>Data Scientist</h2>
+            <p>Transforming raw data into meaningful insights through innovative data science techniques.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('global.jpg');"></div>
+                    <div class="project-content">
+                        <h3>Global Country Analysis</h3>
+                        <p>Unsupervised learning techniques to analyze countries worldwide.</p>
+                        <div class="tags">
+                            <span>Clustering</span>
+                            <span>Data Visualization</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('stock.jpg');"></div>
+                    <div class="project-content">
+                        <h3>Stock Market Predictions</h3>
+                        <p>Supervised learning models to predict stock market trends and values.</p>
+                        <div class="tags">
+                            <span>Regression</span>
+                            <span>Time Series Analysis</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Disciplines</h3>
+                    <ul>
+                        <li>Data Science</li>
+                        <li>Machine Learning</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Deep Learning</li>
+                        <li>Backend Development</li>
+                        <li>Data Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python (Proficient)</li>
+                        <li>SQL (Proficient)</li>
+                        <li>C++ (Proficient)</li>
+                        <li>C</li>
+                        <li>C#</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>CUDA</li>
+                        <li>PyTorch</li>
+                        <li>Sci-Kit Learn</li>
+                        <li>Docker</li>
+                        <li>Version Control</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>Unified Modeling Language</li>
+                        <li>Agile</li>
+                        <li>Scrum</li>
+                        <li>Kanban Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>University of Washington Bothell</h3>
+                <p>Bachelor of Science in Computer Science and Software Engineering</p>
+                <p>GPA: 3.4</p>       
+                <p>Graduated: June, 2024</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Jaylon Nelson-Sellers. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
