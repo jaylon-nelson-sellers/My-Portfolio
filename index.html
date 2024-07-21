@@ -5,59 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaylon Nelson-Sellers | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">JCNS</div>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Jaylon Christopher Nelson-Sellers</h1>
-            <h2>Data Scientist</h2>
-            <p>Transforming raw data into meaningful insights through innovative data science techniques.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-            </div>
-        </div>
-    </header>
+    <header class="full-page-header">
+        <div class="header-content">
+          <h1>Jaylon Christopher Nelson-Sellers</h1>
+          <h2>Data Scientist</h2>
+          <p>Transforming raw data into meaningful insights through innovative data science techniques.</p>
 
-    <main>
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('global.jpg');"></div>
-                    <div class="project-content">
-                        <h3>Global Country Analysis</h3>
-                        <p>Unsupervised learning techniques to analyze countries worldwide.</p>
-                        <div class="tags">
-                            <span>Clustering</span>
-                            <span>Data Visualization</span>
-                        </div>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('stock.jpg');"></div>
-                    <div class="project-content">
-                        <h3>Stock Market Predictions</h3>
-                        <p>Supervised learning models to predict stock market trends and values.</p>
-                        <div class="tags">
-                            <span>Regression</span>
-                            <span>Time Series Analysis</span>
-                        </div>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
+          <a href="#projects" class="btn primary">View Projects</a>
+        </div>
+        <div class="header-image">
+          <img src="jcns.jpg" alt="Me">
+        </div>
+      </header>
+
+      <div class="container">
+        <section id="mission" class="section">
+          <h2>My Mission</h2>
+          <p>
+            Artificial Intelligence is not just a buzzword to attract venture capitalist---it's a revolutionary force reshaping our understanding of complex data. As a data scientist, my mission is to harness the power of AI and machine learning to translate intricate datasets into clear, actionable insights. Much like an artist who distills reality into a minimalist painting, I strive to simplify complex information without losing its essence. My goal is to bridge the gap between raw data and informed decision-making, enabling organizations to uncover hidden patterns, predict future trends, and gain a competitive edge in an increasingly data-driven world. Through innovative algorithms and creative problem-solving, I aim to make the abstract concrete, the complex simple, and the obscure clear---ultimately empowering businesses and individuals to make smarter, data-informed choices that drive progress and innovation.
+          </p>
         </section>
+      
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>University of Washington Bothell</h3>
+            <p>Bachelor of Science in Computer Science and Software Engineering</p>
+            <p>GPA: 3.4</p>
+            <p>Graduated: June, 2024</p>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+              <div class="project-image" style="background-image: url('global.jpg');"></div>
+              <div class="project-content">
+                <h3>Global Country Analysis: Unveiling Patterns through Unsupervised Learning</h3>
+                <p>This project applies unsupervised learning techniques to analyze countries worldwide, highlighting similarities and differences across various attributes. Key components include:</p>
+                <ul>
+                  <li><strong>Data Processing:</strong> Implementing text-to-numeric conversion techniques to make textual data compatible with machine learning algorithms.</li>
+                  <li><strong>Clustering Analysis:</strong> Utilizing advanced algorithms to group countries based on multiple features such as geographical location, linguistics, and demographic data.</li>
+                  <li><strong>Dimensionality Reduction:</strong> Applying decomposition techniques to condense multidimensional data into two-dimensional visualizations, enhancing data accessibility and interpretation.</li>
+                </ul>
+                <div class="tags">
+                  <span>Clustering</span>
+                  <span>Data Visualization</span>
+                </div>
+                <a href="#" class="btn">View Project (Coming Soon)</a>
+              </div>
+            </div>
+          
+            <div class="project-card">
+              <div class="project-image" style="background-image: url('stock.jpg');"></div>
+              <div class="project-content">
+                <h3>Predictive Stock Market Analysis: Leveraging Supervised Learning for Financial Forecasting</h3>
+                <p>This project employs supervised learning models to predict stock market trends and values, focusing on:</p>
+                <ul>
+                  <li><strong>Regression Analysis:</strong> Developing models to forecast specific stock prices, providing numerical predictions for future values.</li>
+                  <li><strong>Classification Models:</strong> Creating algorithms to predict binary outcomes, such as whether a stock's price will increase or decrease.</li>
+                </ul>
+                <p>These projects demonstrate the application of data science in extracting valuable insights from complex datasets, enabling more informed decision-making in diverse fields.</p>
+                <div class="tags">
+                  <span>Regression</span>
+                  <span>Time Series Analysis</span>
+                </div>
+                <a href="#" class="btn">View Project (Coming Soon)</a>
+              </div>
+            </div>
+          </section>
 
         <section id="skills">
             <h2>Skills</h2>
@@ -107,17 +128,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>University of Washington Bothell</h3>
-                <p>Bachelor of Science in Computer Science and Software Engineering</p>
-                <p>GPA: 3.4</p>       
-                <p>Graduated: June, 2024</p>
-            </div>
-        </section>
-    </main>
+    </div>
 
     <footer>
         <div class="footer-content">
