@@ -3,48 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaylon Nelson-Sellers | Data Scientist</title>
+    <title>Jaylon Christopher Nelson-Sellers - Data Scientist</title>
     <link rel="stylesheet" href="style.css">
-    <script src="gsap.min.js"></script>
-    <script src="ScrollTrigger.min.js"></script>
 </head>
 <body>
     <header class="full-page-header">
         <div class="header-content">
-          <h1>Jaylon Christopher Nelson-Sellers</h1>
-          <h2>Data Scientist</h2>
-          <p>Transforming raw data into meaningful insights through innovative data science techniques.</p>
-
-          <a href="#projects" class="btn primary">View Projects</a>
+            <h1>Jaylon Christopher Nelson-Sellers</h1>
+            <h2>Data Scientist</h2>
+            <p>Transforming raw data into meaningful insights through innovative data science techniques.</p>
+            <a href="#projects" class="btn primary">View Projects</a>
         </div>
         <div class="header-image">
-          <img src="/jcns.png" alt="Me">
+            <img src="/media/jcns.jpg" alt="Jaylon Christopher Nelson-Sellers">
         </div>
-      </header>
+    </header>
 
-      <div class="container">
+    <main class="container">
         <section id="mission" class="section">
-          <h2>My Mission</h2>
-          <p>
-            Artificial Intelligence is not just a buzzword to attract venture capitalist---it's a revolutionary force reshaping our understanding of complex data. As a data scientist, my mission is to harness the power of AI and machine learning to translate intricate datasets into clear, actionable insights. Much like an artist who distills reality into a minimalist painting, I strive to simplify complex information without losing its essence. My goal is to bridge the gap between raw data and informed decision-making, enabling organizations to uncover hidden patterns, predict future trends, and gain a competitive edge in an increasingly data-driven world. Through innovative algorithms and creative problem-solving, I aim to make the abstract concrete, the complex simple, and the obscure clear---ultimately empowering businesses and individuals to make smarter, data-informed choices that drive progress and innovation.
-          </p>
+            <h2>My Mission</h2>
+            <div class="card">
+                <p>Artificial Intelligence is not just a buzzword to attract venture capitalist---it's a revolutionary force reshaping our understanding of complex data. As a data scientist, my mission is to harness the power of AI and machine learning to translate intricate datasets into clear, actionable insights. Much like an artist who distills reality into a minimalist painting, I strive to simplify complex information without losing its essence. My goal is to bridge the gap between raw data and informed decision-making, enabling organizations to uncover hidden patterns, predict future trends, and gain a competitive edge in an increasingly data-driven world. Through innovative algorithms and creative problem-solving, I aim to make the abstract concrete, the complex simple, and the obscure clear---ultimately empowering businesses and individuals to make smarter, data-informed choices that drive progress and innovation.</p>
+            </div>
         </section>
-      
+
         <section id="education" class="section">
-          <h2>Education</h2>
-          <div class="education-item">
-            <h3>University of Washington Bothell</h3>
-            <p>Bachelor of Science in Computer Science and Software Engineering</p>
-            <p>GPA: 3.4</p>
-            <p>Graduated: June, 2024</p>
-          </div>
+            <h2>Education</h2>
+            <div class="card education-item">
+                <div class="education-content">
+                    <h3>University of Washington Bothell</h3>
+                    <p>Bachelor of Science in Computer Science and Software Engineering</p>
+                    <p>GPA: 3.4</p>
+                    <p>Graduated: June, 2024</p>
+                </div>
+                <div class="education-image">
+                    <img src="/media/uw_seal.png" alt="University of Washington Bothell">
+                </div>
+            </div>
         </section>
+
 
         <section id="projects" class="section">
             <h2>Featured Projects</h2>
             
             <div class="project-card">
-              <div class="project-image" style="background-image: url('global.jpg');"></div>
+              <div class="project-image" style="background-image: url('media/global.jpg');"></div>
               <div class="project-content">
                 <h3>Global Country Analysis: Unveiling Patterns through Unsupervised Learning</h3>
                 <p>This project applies unsupervised learning techniques to analyze countries worldwide, highlighting similarities and differences across various attributes. Key components include:</p>
@@ -56,29 +59,72 @@
                 <div class="tags">
                   <span>Clustering</span>
                   <span>Data Visualization</span>
+                  <span>Geo-politics</span>
                 </div>
                 <a href="#" class="btn">View Project (Coming Soon)</a>
               </div>
             </div>
           
             <div class="project-card">
-              <div class="project-image" style="background-image: url('stock.jpg');"></div>
+              <div class="project-image" style="background-image: url('media/stock.jpg');"></div>
               <div class="project-content">
-                <h3>Predictive Stock Market Analysis: Leveraging Supervised Learning for Financial Forecasting</h3>
+                <h3>Stock Market Analysis: Leveraging Supervised Learning for Financial Forecasting</h3>
                 <p>This project employs supervised learning models to predict stock market trends and values, focusing on:</p>
                 <ul>
                   <li><strong>Regression Analysis:</strong> Developing models to forecast specific stock prices, providing numerical predictions for future values.</li>
-                  <li><strong>Classification Models:</strong> Creating algorithms to predict binary outcomes, such as whether a stock's price will increase or decrease.</li>
+                  <li><strong>Classification Analysis:</strong> Creating algorithms to predict binary outcomes, such as whether a stock's price will increase or decrease.</li>
                 </ul>
                 <p>These projects demonstrate the application of data science in extracting valuable insights from complex datasets, enabling more informed decision-making in diverse fields.</p>
                 <div class="tags">
-                  <span>Regression</span>
                   <span>Time Series Analysis</span>
+                  <span>Deep Learning</span>
+                  <span>Supervised Learning</span>
+                </div>
+                <a href="#" class="btn">View Project (Coming Soon)</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image" style="background-image: url('media/AITA.jpg');"></div>
+              <div class="project-content">
+                <h3>Text Analysis: Predicting online reactions to stories  </h3>
+                <p>This project applies unsupervised and supervised learning to analyze online posts on the subreddit "Am I the ***hole". Users post scenerios to the subreddit for the community to judge if they were at fault, i.e. the asshole. Key components include:</p>
+                <ul>
+                  <li><strong>Data Processing:</strong> Implementing text-to-numeric conversion techniques to make online posts compatible with machine learning algorithms.</li>
+                  <li><strong>Clustering Analysis:</strong> Utilizing advanced algorithms to group posts and identify commonality between these posts.</li>
+                  <li><strong>Dimensionality Reduction:</strong> Applying decomposition techniques to condense multidimensional data into two-dimensional visualizations, enhancing data accessibility and interpretation.</li>
+                  <li><strong>Classification Analysis:</strong> Creating algorithms to predict multi label outcomes, such as whether the person in question is the ***hole, not the ***hole, everyone is the ***hole.</li>
+                </ul>
+                <div class="tags">
+                  <span>Natural Language Processing</span>
+                  <span>Clustering</span>
+                  <span>Classification</span>
+                </div>
+                <a href="#" class="btn">View Project (Coming Soon)</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image" style="background-image: url('media/unite.jpg');"></div>
+              <div class="project-content">
+                <h3>Video Game Anaysis: Discovering trends in powerful characters in the game "Pokemon Unite" </h3>
+                <p>This project applies unsupervised learning techniques to analyze playable characters in the game Pokemon Unite. Key components include:</p>
+                <ul>
+                  <li><strong>Data Processing:</strong> Implementing data cleaning and organizing to make data compatible with machine learning algorithms.</li>
+                  <li><strong>Clustering Analysis:</strong> Utilizing advanced algorithms to group characters based on multiple features.</li>
+                  <li><strong>Dimensionality Reduction:</strong> Applying decomposition techniques to condense multidimensional data into two-dimensional visualizations, enhancing data accessibility and interpretation.</li>
+                </ul>
+                <div class="tags">
+                  <span>Video Games/Esports</span>
+                  <span>Clustering</span>
+                  <span>Data Visualization</span>
                 </div>
                 <a href="#" class="btn">View Project (Coming Soon)</a>
               </div>
             </div>
           </section>
+          
+          
 
         <section id="skills">
             <h2>Skills</h2>
@@ -131,17 +177,16 @@
     </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="contact-links">
-                <a href="tel:+4253099012" title="Telephone">Phone: (425)-309-9012</a>
-                <a href="mailto:jcns@uw.edu" title="Email me">Email: jcns@uw.edu</a>
-                <a href="https://github.com/JaylonSellers" target="_blank" rel="noopener noreferrer" title="Visit this website's repo">Visit this website's repo</a>
-            </div>
-            <p>&copy; 2024 Jaylon Nelson-Sellers. All rights reserved.</p>
-            
-        </div>
-    </footer>
+      <div class="contact-links">
+          <a href="tel:+4253099012">Phone: (425)-309-9012</a>
+          <a href="mailto:jcns@uw.edu">Email: jcns@uw.edu</a>
+          <a href="https://github.com/JaylonSellers" target="_blank" rel="noopener noreferrer">Visit this website's repo</a>
+      </div>
+      <p>© 2024 Jaylon Nelson-Sellers. All rights reserved.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="gsap.min.js"></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

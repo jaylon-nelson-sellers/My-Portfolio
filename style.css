@@ -15,20 +15,24 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: var(--main-color);
+    color: var(--text-color);
     background-color: var(--bg-color);
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
-    background-color: var(--bg-color);
 }
 
 .section {
     margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -37,85 +41,33 @@ h2 {
     color: var(--accent-color);
 }
 
-.project-card {
+.full-page-header {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-.project-content {
-    padding: 1.5rem;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
-
-.skill-category {
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.full-page-header {
-    height: 100vh;
-    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
     color: var(--text-color);
-}
-
-.header-content {
-    flex: 1;
     padding: 2rem;
 }
 
+.header-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .header-image {
-    flex: 1.5;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .header-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    opacity: 0.95; /* This helps blend the image with the background */
-}
-
-.header-image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--main-color);
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: var(--accent-color);
+    border-radius: 10px;
 }
 
 .btn {
@@ -130,23 +82,15 @@ h2 {
 
 .btn.primary {
     background-color: var(--accent-color);
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    background-color: #b3d1bd; /* Slightly lighter version of accent color */
+    background-color: var(--secondary-accent);
 }
 
-.section {
-    padding: 4rem 0;
-}
-
-#education {
-    background-color: var(--bg-color);
-}
-
-.education-item {
+.card {
     background-color: var(--card-bg);
     border-radius: 10px;
     padding: 1.5rem;
@@ -154,37 +98,45 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.education-item h3 {
-    color: var(--main-color);
-    margin-bottom: 0.5rem;
+.education-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+.education-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+.education-image {
+    flex: 1;
+    min-width: 250px;
+    margin-left: 1rem;
+}
+
+.education-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .project-card {
     display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+
 .project-image {
-    flex: 1;
-    min-height: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .project-content {
-    flex: 2;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .tags {
@@ -198,20 +150,14 @@ h2 {
     border-radius: 20px;
     font-size: 0.8rem;
     margin-right: 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.skill-category {
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 1.5rem;
 }
 
 .skill-category h3 {
@@ -233,7 +179,6 @@ h2 {
     color: var(--accent-color);
 }
 
-
 footer {
     background-color: var(--card-bg);
     padding: 2rem 0;
@@ -241,8 +186,50 @@ footer {
     margin-top: 4rem;
 }
 
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.contact-links a {
+    margin: 0.5rem;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
-    .project-grid, .skills-container {
+    .full-page-header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .education-item {
+        flex-direction: column;
+    }
+
+    .education-image {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+    .skills-container {
         grid-template-columns: 1fr;
+    }
+
+    .contact-links {
+        flex-direction: column;
     }
 }
