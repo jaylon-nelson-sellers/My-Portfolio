@@ -1,192 +1,996 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--This website is cloned from Jose Ocando @ https://www.joseocando.com/. I'm not a front dev, I just like the apperance.-->
+<!DOCTYPE html><!-- Last Published: Mon July 22 2024 -->
+<html data-wf-domain="jcns.dev" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaylon Christopher Nelson-Sellers - Data Scientist</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>Jaylon C. N. S.</title>
+    <meta content="Data Scientist|Backend Developer" name="description" />
+    <meta content="Jaylon C. N. S." property="og:title" />
+    <meta content="Data Scientist|Backend Developer" property="og:description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        @media (min-width:992px) {
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="872df808-8396-69fe-20b7-6daf3d4365fb"] {
+                opacity: 0;
+            }
+
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="872df808-8396-69fe-20b7-6daf3d4365fd"] {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                -moz-transform: translate3d(0, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                -ms-transform: translate3d(0, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                transform: translate3d(0, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            }
+        }
+    </style>
+    <script
+        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+    <link href="/media/j.jpg" rel="shortcut icon" type="image/x-icon" />
+    <link href="/media/j.jpg" rel="apple-touch-icon" /><!-- [Attributes by Finsweet] List item counter -->
+    <script defer src="/scripts/countitems.js"></script>
+    <link rel="stylesheet" href="scripts/swiper-bundle.min.js" />
+
+    <style>
+        .swiper-slide.is-work {
+            opacity: .07;
+        }
+
+        .categories-list {
+            opacity: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <header class="full-page-header">
-        <div class="header-content">
-            <h1>Jaylon Christopher Nelson-Sellers</h1>
-            <h2>Data Scientist</h2>
-            <p>Transforming raw data into meaningful insights through innovative data science techniques.</p>
-            <a href="#projects" class="btn primary">View Projects</a>
+    <div class="page-wrapper">
+        <div>
+            <div class="custom-styles__base w-embed">
+                <style>
+                    :root {
+                        /* Reset Font Weight variable values */
+                        --text-weight--100: 100;
+                        --text-weight--200: 200;
+                        --text-weight--300: 300;
+                        --text-weight--400: 400;
+                        --text-weight--500: 500;
+                        --text-weight--600: 600;
+                        --text-weight--700: 700;
+                        --text-weight--800: 800;
+                        --text-weight--900: 900;
+                        /* Set layout system gap from variable */
+                        --grid-gap-split: calc(var(--spacing-layout--row-col-gap)/2);
+                    }
+
+                    /* Fluid Type Styles */
+                    html {
+                        font-size: calc(0.625rem + 0.41666666666666663vw);
+                    }
+
+                    @media screen and (max-width:1920px) {
+                        html {
+                            font-size: calc(0.625rem + 0.41666666666666674vw);
+                        }
+                    }
+
+                    @media screen and (max-width:1440px) {
+                        html {
+                            font-size: calc(0.8126951092611863rem + 0.20811654526534862vw);
+                        }
+                    }
+
+                    @media screen and (max-width:479px) {
+                        html {
+                            font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
+                        }
+                    }
+
+                    body {
+                        -webkit-font-smoothing: antialiased;
+                        -moz-font-smoothing: antialiased;
+                        -o-font-smoothing: antialiased;
+                    }
+
+                    section {
+                        padding-top: var(--spacing-layout--section-padding-lg);
+                    }
+
+                    @media only screen and (max-width: 991px) {
+                        section {
+                            padding-top: var(--spacing-layout--section-padding-sm);
+                        }
+                    }
+
+                    @media only screen and (max-width: 767px) {
+                        section {
+                            padding-top: var(--spacing-layout--section-padding-sm);
+                        }
+                    }
+
+                    /*Text Selection Color*/
+                    ::selection {
+                        background: var(--colors--primary);
+                        color: var(--colors--neutral-01);
+                    }
+
+                    ::-moz-selection {
+                        background: var(--colors--primary);
+                        color: var(--colors--neutral-01);
+                    }
+
+                    /*Reset apple form styles*/
+                    input,
+                    textarea,
+                    select {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        border-radius: 0;
+                        background-image: none;
+                    }
+
+                    /* Remove top margin on rich text first child */
+                    .w-richtext>:first-child {
+                        margin-top: 0;
+                    }
+
+                    /* Remove bottom margin of rich text last child */
+                    .w-richtext>:last-child,
+                    .w-richtext ol li:last-child,
+                    .w-richtext ul li:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    /* Display ... after 2 lines of text */
+                    .u-line-clamp {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+
+                    /* Animated underscore link */
+                    .animated-underscore:before,
+                    .parent-animated-underscore:before {
+                        border-bottom: 2px solid currentColor;
+                        content: "";
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        right: 0px;
+                        opacity: .12;
+                    }
+
+                    .nav-link.cc-footer:before {
+                        border-bottom: 2px solid currentColor;
+                        content: "";
+                        position: absolute;
+                        bottom: 0px;
+                        left: 1.5rem;
+                        width: 0%;
+                        transition: width .6s cubic-bezier(0.22, 1, 0.36, 1);
+                    }
+
+                    @media only screen and (min-width: 992px) {
+
+                        .animated-underscore:after,
+                        .parent-animated-underscore:after {
+                            border-bottom: 2px solid currentColor;
+                            content: "";
+                            position: absolute;
+                            bottom: 0px;
+                            left: 0px;
+                            right: 0px;
+                            width: 0%;
+                            transition: width .6s cubic-bezier(0.22, 1, 0.36, 1);
+                        }
+
+                        .animated-underscore:hover:after,
+                        [parent-animate="parent"]:hover .parent-animated-underscore:after {
+                            width: 100%;
+                        }
+
+                        .nav-link.cc-footer:hover:before {
+                            width: calc(100% - 3rem);
+                        }
+                    }
+
+                    /* Shadows */
+                    [shadow="sm"] {
+                        box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.03), -3px 3px 3px rgba(0, 0, 0, 0.1), -1px 1px 2px rgba(0, 0, 0, 0.17), 0px 0px 1px rgba(0, 0, 0, 0.19);
+                    }
+
+                    [shadow="md"] {
+                        box-shadow: -31px 46px 22px rgba(0, 0, 0, 0.01), -17px 26px 19px rgba(0, 0, 0, 0.03), -8px 11px 14px rgba(0, 0, 0, 0.05), -2px 3px 8px rgba(0, 0, 0, 0.06);
+                    }
+
+                    [shadow="lg"] {
+                        box-shadow: -96px 127px 64px rgba(0, 0, 0, 0.01), -54px 71px 54px rgba(0, 0, 0, 0.05), -24px 32px 40px rgba(0, 0, 0, 0.08), -6px 8px 22px rgba(0, 0, 0, 0.1);
+                    }
+                </style>
+            </div>
+            <div class="custom-styles__site w-embed">
+                <style>
+                    @view-transition {
+                        navigation: auto;
+                    }
+
+                    .swiper-slide.is-work.swiper-slide-visible {
+                        opacity: .33;
+                    }
+
+                    .swiper-slide.is-work.swiper-slide-active,
+                    .swiper-slide.is-work.swiper-slide-next,
+                    .swiper-slide.is-work.swiper-slide-prev,
+                    .swiper-slide.is-work:hover {
+                        opacity: 1;
+                    }
+
+                    .swiper-slide.is-work.swiper-slide-active .categories-list {
+                        opacity: 1;
+                    }
+
+                    .swiper-slide.is-work.swiper-slide-active .cc-card-title {
+                        color: var(--colors--neutral-06);
+                    }
+
+                    .swiper-slide.is-work .work-thumbnail {
+                        transform: scale(.75);
+                        box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.03), -3px 3px 3px rgba(0, 0, 0, 0.1), -1px 1px 2px rgba(0, 0, 0, 0.17), 0px 0px 1px rgba(0, 0, 0, 0.19);
+                    }
+
+                    .swiper-slide.is-work.swiper-slide-next .work-thumbnail,
+                    .swiper-slide.is-work.swiper-slide-prev .work-thumbnail {
+                        transform: scale(.9);
+                        box-shadow: -31px 46px 22px rgba(0, 0, 0, 0.01), -17px 26px 19px rgba(0, 0, 0, 0.03), -8px 11px 14px rgba(0, 0, 0, 0.05), -2px 3px 8px rgba(0, 0, 0, 0.06);
+                    }
+
+                    .swiper-slide.is-work.swiper-slide-active .work-thumbnail {
+                        transform: scale(1);
+                        box-shadow: -96px 127px 64px rgba(0, 0, 0, 0.01), -54px 71px 54px rgba(0, 0, 0, 0.05), -24px 32px 40px rgba(0, 0, 0, 0.08), -6px 8px 22px rgba(0, 0, 0, 0.1);
+                    }
+
+                    a.icon-link:hover .icon-box {
+                        background: var(--colors--neutral-04);
+                        border-color: var(--colors--neutral-04);
+                    }
+
+                    @media only screen and (min-width: 992px) {
+                        .feature-block:nth-child(even) .feature-block-inner {
+                            flex-direction: row-reverse;
+                            flex-wrap: nowrap;
+                        }
+                    }
+
+                    .feature-block .animated-btn:hover .btn-text {
+                        color: var(--colors--neutral-02);
+                    }
+
+                    .feature-block .animated-btn:hover {
+                        border-color: var(--colors--hr-light);
+                    }
+                </style>
+            </div>
         </div>
-        <div class="header-image">
-            <img src="/media/jcns.jpg" alt="Jaylon Christopher Nelson-Sellers">
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="mission" class="section">
-            <h2>My Mission</h2>
-            <div class="card">
-                <p>Artificial Intelligence is not just a buzzword to attract venture capitalist---it's a revolutionary force reshaping our understanding of complex data. As a data scientist, my mission is to harness the power of AI and machine learning to translate intricate datasets into clear, actionable insights. Much like an artist who distills reality into a minimalist painting, I strive to simplify complex information without losing its essence. My goal is to bridge the gap between raw data and informed decision-making, enabling organizations to uncover hidden patterns, predict future trends, and gain a competitive edge in an increasingly data-driven world. Through innovative algorithms and creative problem-solving, I aim to make the abstract concrete, the complex simple, and the obscure clear---ultimately empowering businesses and individuals to make smarter, data-informed choices that drive progress and innovation.</p>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <div class="card education-item">
-                <div class="education-content">
-                    <h3>University of Washington Bothell</h3>
-                    <p>Bachelor of Science in Computer Science and Software Engineering</p>
-                    <p>GPA: 3.4</p>
-                    <p>Graduated: June, 2024</p>
-                </div>
-                <div class="education-image">
-                    <img src="/media/uw_seal.png" alt="University of Washington Bothell">
-                </div>
-            </div>
-        </section>
-
-
-        <section id="projects" class="section">
-            <h2>Featured Projects</h2>
-            
-            <div class="project-card">
-              <div class="project-image" style="background-image: url('media/global.jpg');"></div>
-              <div class="project-content">
-                <h3>Global Country Analysis: Unveiling Patterns through Unsupervised Learning</h3>
-                <p>This project applies unsupervised learning techniques to analyze countries worldwide, highlighting similarities and differences across various attributes. Key components include:</p>
-                <ul>
-                  <li><strong>Data Processing:</strong> Implementing text-to-numeric conversion techniques to make textual data compatible with machine learning algorithms.</li>
-                  <li><strong>Clustering Analysis:</strong> Utilizing advanced algorithms to group countries based on multiple features such as geographical location, linguistics, and demographic data.</li>
-                  <li><strong>Dimensionality Reduction:</strong> Applying decomposition techniques to condense multidimensional data into two-dimensional visualizations, enhancing data accessibility and interpretation.</li>
-                </ul>
-                <div class="tags">
-                  <span>Clustering</span>
-                  <span>Data Visualization</span>
-                  <span>Geo-politics</span>
-                </div>
-                <a href="#" class="btn">View Project (Coming Soon)</a>
-              </div>
-            </div>
-          
-            <div class="project-card">
-              <div class="project-image" style="background-image: url('media/stock.jpg');"></div>
-              <div class="project-content">
-                <h3>Stock Market Analysis: Leveraging Supervised Learning for Financial Forecasting</h3>
-                <p>This project employs supervised learning models to predict stock market trends and values, focusing on:</p>
-                <ul>
-                  <li><strong>Regression Analysis:</strong> Developing models to forecast specific stock prices, providing numerical predictions for future values.</li>
-                  <li><strong>Classification Analysis:</strong> Creating algorithms to predict binary outcomes, such as whether a stock's price will increase or decrease.</li>
-                </ul>
-                <p>These projects demonstrate the application of data science in extracting valuable insights from complex datasets, enabling more informed decision-making in diverse fields.</p>
-                <div class="tags">
-                  <span>Time Series Analysis</span>
-                  <span>Deep Learning</span>
-                  <span>Supervised Learning</span>
-                </div>
-                <a href="#" class="btn">View Project (Coming Soon)</a>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-image" style="background-image: url('media/AITA.jpg');"></div>
-              <div class="project-content">
-                <h3>Text Analysis: Predicting online reactions to stories  </h3>
-                <p>This project applies unsupervised and supervised learning to analyze online posts on the subreddit "Am I the ***hole". Users post scenerios to the subreddit for the community to judge if they were at fault, i.e. the asshole. Key components include:</p>
-                <ul>
-                  <li><strong>Data Processing:</strong> Implementing text-to-numeric conversion techniques to make online posts compatible with machine learning algorithms.</li>
-                  <li><strong>Clustering Analysis:</strong> Utilizing advanced algorithms to group posts and identify commonality between these posts.</li>
-                  <li><strong>Dimensionality Reduction:</strong> Applying decomposition techniques to condense multidimensional data into two-dimensional visualizations, enhancing data accessibility and interpretation.</li>
-                  <li><strong>Classification Analysis:</strong> Creating algorithms to predict multi label outcomes, such as whether the person in question is the ***hole, not the ***hole, everyone is the ***hole.</li>
-                </ul>
-                <div class="tags">
-                  <span>Natural Language Processing</span>
-                  <span>Clustering</span>
-                  <span>Classification</span>
-                </div>
-                <a href="#" class="btn">View Project (Coming Soon)</a>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-image" style="background-image: url('media/unite.jpg');"></div>
-              <div class="project-content">
-                <h3>Video Game Anaysis: Discovering trends in powerful characters in the game "Pokemon Unite" </h3>
-                <p>This project applies unsupervised learning techniques to analyze playable characters in the game Pokemon Unite. Key components include:</p>
-                <ul>
-                  <li><strong>Data Processing:</strong> Implementing data cleaning and organizing to make data compatible with machine learning algorithms.</li>
-                  <li><strong>Clustering Analysis:</strong> Utilizing advanced algorithms to group characters based on multiple features.</li>
-                  <li><strong>Dimensionality Reduction:</strong> Applying decomposition techniques to condense multidimensional data into two-dimensional visualizations, enhancing data accessibility and interpretation.</li>
-                </ul>
-                <div class="tags">
-                  <span>Video Games/Esports</span>
-                  <span>Clustering</span>
-                  <span>Data Visualization</span>
-                </div>
-                <a href="#" class="btn">View Project (Coming Soon)</a>
-              </div>
-            </div>
-          </section>
-          
-          
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Disciplines</h3>
-                    <ul>
-                        <li>Data Science</li>
-                        <li>Machine Learning</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Deep Learning</li>
-                        <li>Backend Development</li>
-                        <li>Data Analysis</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python (Proficient)</li>
-                        <li>SQL (Proficient)</li>
-                        <li>C++ (Proficient)</li>
-                        <li>C</li>
-                        <li>C#</li>
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>CUDA</li>
-                        <li>PyTorch</li>
-                        <li>Sci-Kit Learn</li>
-                        <li>Docker</li>
-                        <li>Version Control</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Project Management</h3>
-                    <ul>
-                        <li>Unified Modeling Language</li>
-                        <li>Agile</li>
-                        <li>Scrum</li>
-                        <li>Kanban Management</li>
-                    </ul>
+        <header class="header">
+            <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease"
+                data-easing2="ease" role="banner" class="nav w-nav">
+                <div class="container">
+                    <div class="row row-justify-center">
+                        <div class="col col-lg-8 col-md-10 col-sm-12">
+                            <nav role="navigation" class="nav-menu w-nav-menu">
+                                <div class="nav-inner">
+                                    <div class="nav-bg"></div>
+                                    <div class="nav-flip">
+                                        <a aria-label="Home" href="/" aria-current="page"
+                                            class="icon-box cc-nav w-inline-block w--current">
+                                            <svg xmlns="http://www.w3.org/20000/svg" width="100%" viewBox="0 0 16 16"
+                                                fill="none" class="sm-icon cc-nav">
+                                                <path
+                                                    d="M2 7.07037C2 6.40166 2.3342 5.7772 2.8906 5.40627L6.8906 2.7396C7.5624 2.29173 8.4376 2.29173 9.1094 2.7396L13.1094 5.40627C13.6658 5.7772 14 6.40166 14 7.07037V12C14 13.1046 13.1046 14 12 14H4C2.89543 14 2 13.1046 2 12V7.07037Z"
+                                                    stroke="currentColor" stroke-width="1.5"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="nav-flip">
+                                        <a href="/#projects" class="nav-link w-nav-link">My Projects</a>
+                                    </div>
+                                    <div class="nav-flip">
+                                        <a href="/about" class="nav-link w-nav-link">About Me</a>
+                                    </div>
+                                    <div class="nav-flip">
+                                        <a href="mailto:ajaylonnelsonsellers@gmail.com"
+                                            class="nav-link w-nav-link">Contact</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="w-nav-button">
+                                <div class="w-icon-nav-menu"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="header-inner">
+                <div class="container">
+                    <div class="row row-align-end row-justify-center">
+                        <div class="col col-lg-4 col-md-10 col-sm-12">
+                            <div>
+                                <div class="v-stack cc-lg">
+                                    <h1 class="h1-name">Jaylon C. N. S.</h1>
+                                    <div>
+                                        <p class="text-3xl">Transforming raw data into meaningful insights through
+                                            innovative data science techniques.</p>
+                                        <div class="profile-row cc-home-hero">
+                                            <div shadow="sm" class="pfp-img-wrap">
+                                                <img src="media/jcns.jpg" loading="lazy" alt="Jaylon C. N. S."
+                                                    class="u-img-cover" />
+                                            </div>
+                                            <div class="profile-row-meta">
+                                                <div class="input-label">Data Scientist</div>
+                                                <div class="input-label">Backend Developer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-1 col-md-12"></div>
+                        <div class="col col-lg-3 col-md-10 col-sm-12">
+                            <div>
+                                <div class="input-label u-mb-lg">Where you can start</div>
+                                <ul role="list" class="icon-link-list">
+                                    <li class="icon-link-item">
+                                        <a href="/about#fun-facts" class="icon-link w-inline-block">
+                                            <div class="icon-box">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16"
+                                                    fill="none" class="sm-icon">
+                                                    <circle cx="8" cy="4" r="3" stroke="currentColor"
+                                                        stroke-width="1.5"></circle>
+                                                    <path
+                                                        d="M2 15C2 13.4087 2.63214 11.8826 3.75736 10.7574C4.88258 9.63214 6.4087 9 8 9C9.59129 9 11.1174 9.63214 12.2426 10.7574C13.3679 11.8826 14 13.4087 14 15"
+                                                        stroke="currentColor" stroke-width="1.5"></path>
+                                                </svg>
+                                            </div>
+                                            <div>Learn a bit about me</div>
+                                        </a>
+                                    </li>
+                                    <li class="icon-link-item">
+                                        <a href="/about#work-history" class="icon-link w-inline-block">
+                                            <div class="icon-box">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16"
+                                                    fill="none" class="sm-icon">
+                                                    <rect x="2" y="1" width="12" height="14" rx="2"
+                                                        stroke="currentColor" stroke-width="1.5"></rect>
+                                                    <line x1="4" y1="4.75" x2="9" y2="4.75" stroke="currentColor"
+                                                        stroke-width="1.5"></line>
+                                                    <line x1="4" y1="7.75" x2="12" y2="7.75" stroke="currentColor"
+                                                        stroke-width="1.5"></line>
+                                                    <line x1="4" y1="10.75" x2="12" y2="10.75" stroke="currentColor"
+                                                        stroke-width="1.5"></line>
+                                                </svg>
+                                            </div>
+                                            <div>Browse my credentials and skills</div>
+                                        </a>
+                                    </li>
+                                    <li class="icon-link-item">
+                                        <a href="#featured-work" class="icon-link w-inline-block">
+                                            <div class="icon-box">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16"
+                                                    fill="none" class="sm-icon">
+                                                    <path
+                                                        d="M3 3C3 1.89543 3.89543 1 5 1H11C12.1046 1 13 1.89543 13 3V14.0397C13 14.4442 12.5447 14.6813 12.2133 14.4493L8.28673 11.7007C8.11457 11.5802 7.88543 11.5802 7.71327 11.7007L3.78673 14.4493C3.45534 14.6813 3 14.4442 3 14.0397V3Z"
+                                                        stroke="currentColor" stroke-width="1.5"></path>
+                                                </svg>
+                                            </div>
+                                            <div>Read about a featured project</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main" class="page-main">
+            <section id="featured-work" class="u-pt-0">
+                <div class="container cc-wide">
+                    <div class="hr-intro">
+                        <div class="eyebrow u-mb-0">Featured Work</div>
+                        <hr class="hr" />
+                        <div class="eyebrow u-mb-0">03</div>
+                    </div>
+                    <div class="w-dyn-list">
+                        <div role="list" class="featured-list w-dyn-items">
+                            <div role="listitem" class="feature-block w-dyn-item">
+                                <div class="feature-block-inner">
+                                    <div class="feature-block__content">
+                                        <div>
+                                            <h2 class="text-5xl u-mb-0">Stock Predictions</h2>
+                                        </div>
+                                        <div>
+                                            <div class="eyebrow u-text-midgray">Supervised Learning</div>
+                                            <p class="text-lg">This project employs deep learning algorithms to predict stock market trends and values.</p>
+                                        </div>
+                                        <div class="button-group"><a href="/work/Stock"
+                                                class="btn animated-btn w-inline-block">
+                                                <div class="btn-bg"></div>
+                                                <div class="btn-text">Read Analysis</div>
+                                                <div class="arrow-wrap">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </a><a rel="noreferrer"
+                                                href="www.needtoadd.com"
+                                                target="_blank" class="btn cc-outline w-inline-block">
+                                                <div class="btn-text">View Paper(Coming Soon)</div><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 17"
+                                                    fill="none" class="btn-arrow cc-figma">
+                                                    <g clip-path="url(#clip0_79_197)">
+                                                        <path
+                                                            d="M11.4818 3.51211C11.4818 4.88947 10.3652 6.00604 8.98787 6.00604H6.42917V1.01819H8.98787C10.3652 1.01819 11.4818 2.13476 11.4818 3.51211Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M1.37653 3.51211C1.37653 4.88947 2.49309 6.00604 3.87045 6.00604H6.42916V1.01819H3.87045C2.49309 1.01819 1.37653 2.13476 1.37653 3.51211Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M1.37653 8.50002C1.37653 9.87738 2.49309 10.994 3.87045 10.994H6.42916V6.0061H3.87045C2.49309 6.0061 1.37653 7.12266 1.37653 8.50002Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M1.37653 13.4878C1.37653 14.8652 2.50918 15.9818 3.88654 15.9818C5.28179 15.9818 6.42916 14.8507 6.42916 13.4554V10.9939H3.87045C2.49309 10.9939 1.37653 12.1105 1.37653 13.4878Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M6.42917 8.50002C6.42917 9.87738 7.54574 10.994 8.9231 10.994H8.98787C10.3652 10.994 11.4818 9.87738 11.4818 8.50002C11.4818 7.12266 10.3652 6.0061 8.98787 6.0061H8.9231C7.54574 6.0061 6.42917 7.12266 6.42917 8.50002Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_79_197">
+                                                            <rect width="11.1417" height="16" fill="currentColor"
+                                                                transform="translate(0.858307 0.5)">
+                                                            </rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a><a href="/work/Stock" class="u-d-none">Stock Predictions</a>
+                                            <link rel="prefetch" href="/work/Stock" />
+                                        </div>
+                                    </div>
+                                    <div class="feature-block-img">
+                                        <div class="feature-block-ratio"></div>
+                                        <div class="w-embed"><img class="u-img-cover border-radius-lg" loading="lazy"
+                                                src="media/stock.jpg"
+                                                style="view-transition-name: intellicheck;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="feature-block w-dyn-item">
+                                <div class="feature-block-inner">
+                                    <div class="feature-block__content">
+                                        <div>
+                                            <h2 class="text-5xl u-mb-0">Clustering Countries</h2>
+                                        </div>
+                                        <div>
+                                            <div class="eyebrow u-text-midgray">Read the Analysis</div>
+                                            <p class="text-lg">&quot;This project applies unsupervised learning techniques to analyze countries worldwide, highlighting similarities and differences across various attributes.&quot;</p>
+                                        </div>
+                                        <div class="button-group"><a href="/work/countries"
+                                                class="btn animated-btn w-inline-block">
+                                                <div class="btn-bg"></div>
+                                                <div class="btn-text">Read the Analysis</div>
+                                                <div class="arrow-wrap">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </a><a rel="noreferrer"
+                                                href="www.needtoadd.com
+                                                target="_blank" class="btn cc-outline w-inline-block">
+                                                <div class="btn-text">View Figma File</div><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 17"
+                                                    fill="none" class="btn-arrow cc-figma">
+                                                    <g clip-path="url(#clip0_79_197)">
+                                                        <path
+                                                            d="M11.4818 3.51211C11.4818 4.88947 10.3652 6.00604 8.98787 6.00604H6.42917V1.01819H8.98787C10.3652 1.01819 11.4818 2.13476 11.4818 3.51211Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M1.37653 3.51211C1.37653 4.88947 2.49309 6.00604 3.87045 6.00604H6.42916V1.01819H3.87045C2.49309 1.01819 1.37653 2.13476 1.37653 3.51211Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M1.37653 8.50002C1.37653 9.87738 2.49309 10.994 3.87045 10.994H6.42916V6.0061H3.87045C2.49309 6.0061 1.37653 7.12266 1.37653 8.50002Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M1.37653 13.4878C1.37653 14.8652 2.50918 15.9818 3.88654 15.9818C5.28179 15.9818 6.42916 14.8507 6.42916 13.4554V10.9939H3.87045C2.49309 10.9939 1.37653 12.1105 1.37653 13.4878Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                        <path
+                                                            d="M6.42917 8.50002C6.42917 9.87738 7.54574 10.994 8.9231 10.994H8.98787C10.3652 10.994 11.4818 9.87738 11.4818 8.50002C11.4818 7.12266 10.3652 6.0061 8.98787 6.0061H8.9231C7.54574 6.0061 6.42917 7.12266 6.42917 8.50002Z"
+                                                            stroke="currentColor" stroke-width="1.12019"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_79_197">
+                                                            <rect width="11.1417" height="16" fill="currentColor"
+                                                                transform="translate(0.858307 0.5)">
+                                                            </rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a><a href="/work/countries" class="u-d-none">Clustering Countries</a>
+                                            <link rel="prefetch" href="/work/countries" />
+                                        </div>
+                                    </div>
+                                    <div class="feature-block-img">
+                                        <div class="feature-block-ratio"></div>
+                                        <div class="w-embed"><img class="u-img-cover border-radius-lg" loading="lazy"
+                                                src="media/global.jpg"
+                                                style="view-transition-name: new-story;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work" class="cards-section">
+                <div class="container">
+                    <div class="v-stack cc-center cc-lg">
+                        <div class="superscript-wrap">
+                            <h2 class="u-mb-0">All work</h2>
+                            <div fs-countitems-element="value" class="eyebrow">X</div>
+                            <div class="u-d-none">
+                                <div class="w-dyn-list">
+                                    <div fs-countitems-element="list" role="list" class="w-dyn-items">
+                                        <div role="listitem" class="w-dyn-item">
+                                            <div>Stock Predictions</div>
+                                        </div>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <div>Countries Clusters</div>
+                                        </div>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <div>EasyTorch Library</div>
+                                        </div>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <div>Image Classification</div>
+                                        </div>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <div>Pokemon Clusters</div>
+                                        </div>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <div>Am I the *sshole? Subreddit</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="work-slider" class="swiper is-work w-dyn-list">
+                            <div role="list" class="swiper-wrapper is-work w-dyn-items">
+                                <div role="listitem" class="swiper-slide is-work w-dyn-item"><a id="Stock_Predictions"
+                                        aria-label="Stock_Predictions" data-w-id="872df808-8396-69fe-20b7-6daf3d4365f9"
+                                        href="/work/stock" class="work-thumbnail w-inline-block"><img
+                                            src="media/stock_slim.jpg"
+                                            loading="lazy" alt=""
+                                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, (max-width: 991px) 22vw, 18vw"
+                                            class="u-img-cover" />
+                                        <div data-w-id="872df808-8396-69fe-20b7-6daf3d4365fb" class="card-hover">
+                                            <div class="card-icon-move">
+                                                <div shadow="sm" data-w-id="872df808-8396-69fe-20b7-6daf3d4365fd"
+                                                    class="card-icon-outer">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div aria-hidden="true" class="card-content">
+                                        <h3 class="text-xl">Stock Predictions</h3>
+                                        <div class="w-dyn-list">   
+                                            <div role="list" class="categories-list w-dyn-items">
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag"> Time Series Analysis</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Data Deep Learning</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Supervised Learning</div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="swiper-slide is-work w-dyn-item"><a id="Countries"
+                                        aria-label="Countries" data-w-id="872df808-8396-69fe-20b7-6daf3d4365f9"
+                                        href="/work/countries" class="work-thumbnail w-inline-block"><img
+                                            src="media/global_slim.jpg"
+                                            loading="lazy" alt=""
+                                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, (max-width: 991px) 22vw, 18vw"
+                                            class="u-img-cover" />
+                                        <div data-w-id="872df808-8396-69fe-20b7-6daf3d4365fb" class="card-hover">
+                                            <div class="card-icon-move">
+                                                <div shadow="sm" data-w-id="872df808-8396-69fe-20b7-6daf3d4365fd"
+                                                    class="card-icon-outer">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div aria-hidden="true" class="card-content">
+                                        <h3 class="text-xl">Country Clusters</h3>
+                                        <div class="w-dyn-list">
+                                            <div role="list" class="categories-list w-dyn-items">
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Geo-Politics</div>   
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Clustering</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Data Visualization</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="swiper-slide is-work w-dyn-item"><a id="EasyTorch"
+                                        aria-label="EasyTorch" data-w-id="872df808-8396-69fe-20b7-6daf3d4365f9"
+                                        href="/work/EasyTorch" class="work-thumbnail w-inline-block"><img
+                                            src="media/easytorch.jpg"
+                                            loading="lazy" alt=""
+                                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, (max-width: 991px) 22vw, 18vw"
+                                            class="u-img-cover" />
+                                        <div data-w-id="872df808-8396-69fe-20b7-6daf3d4365fb" class="card-hover">
+                                            <div class="card-icon-move">
+                                                <div shadow="sm" data-w-id="872df808-8396-69fe-20b7-6daf3d4365fd"
+                                                    class="card-icon-outer">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div aria-hidden="true" class="card-content">
+                                        <h3 class="text-xl">EasyTorch Library</h3>
+                                        <div class="w-dyn-list">
+                                            <div role="list" class="categories-list w-dyn-items">
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">PyTorch</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Deep Learning</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Supervised Learning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="swiper-slide is-work w-dyn-item"><a id="Image_Classification"
+                                        aria-label="Image_Classification" data-w-id="872df808-8396-69fe-20b7-6daf3d4365f9"
+                                        href="/work/cifar" class="work-thumbnail w-inline-block"><img
+                                            src="media/cifar.jpg"
+                                            loading="lazy" alt=""
+                                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, (max-width: 991px) 22vw, 18vw"
+                                            class="u-img-cover" />
+                                        <div data-w-id="872df808-8396-69fe-20b7-6daf3d4365fb" class="card-hover">
+                                            <div class="card-icon-move">
+                                                <div shadow="sm" data-w-id="872df808-8396-69fe-20b7-6daf3d4365fd"
+                                                    class="card-icon-outer">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div aria-hidden="true" class="card-content">
+                                        <h3 class="text-xl">Image Classification</h3>
+                                        <div class="w-dyn-list">
+                                            <div role="list" class="categories-list w-dyn-items">
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Machine Vision</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Image Classifcation</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Deep Learning</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">CIFAR 10</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">CIFAR 100</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="swiper-slide is-work w-dyn-item"><a id="Pokemon_Clusters"
+                                        aria-label="Pokemon_Clusters" data-w-id="872df808-8396-69fe-20b7-6daf3d4365f9"
+                                        href="/work/pokemon" class="work-thumbnail w-inline-block"><img
+                                            src="media/unite_slim.jpg"
+                                            loading="lazy" alt=""
+                                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, (max-width: 991px) 22vw, 18vw"
+                                            class="u-img-cover" />
+                                        <div data-w-id="872df808-8396-69fe-20b7-6daf3d4365fb" class="card-hover">
+                                            <div class="card-icon-move">
+                                                <div shadow="sm" data-w-id="872df808-8396-69fe-20b7-6daf3d4365fd"
+                                                    class="card-icon-outer">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div aria-hidden="true" class="card-content">
+                                        <h3 class="text-xl">Pokemon Clusters</h3>
+                                        <div class="w-dyn-list">
+                                            <div role="list" class="categories-list w-dyn-items">
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Video Game/Esports</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Clustering</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Data Visualization</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="swiper-slide is-work w-dyn-item"><a id="reddit"
+                                        aria-label="reddit" data-w-id="872df808-8396-69fe-20b7-6daf3d4365f9"
+                                        href="/work/support-ninja" class="work-thumbnail w-inline-block"><img
+                                            src="media/AITA_slim.jpg"
+                                            loading="lazy" alt=""
+                                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, (max-width: 991px) 22vw, 18vw"
+                                            class="u-img-cover" />
+                                        <div data-w-id="872df808-8396-69fe-20b7-6daf3d4365fb" class="card-hover">
+                                            <div class="card-icon-move">
+                                                <div shadow="sm" data-w-id="872df808-8396-69fe-20b7-6daf3d4365fd"
+                                                    class="card-icon-outer">
+                                                    <div class="btn-arrow w-embed"><svg width="16" height="16"
+                                                            viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor"
+                                                                stroke-width="1.5" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div aria-hidden="true" class="card-content">
+                                        <h3 class="text-xl">Am I the ***hole Subreddit</h3>
+                                        <div class="w-dyn-list">
+                                            <div role="list" class="categories-list w-dyn-items">
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Natural Language Processing</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Supervised Learning</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Unsupervised Learning</div>
+                                                </div>
+                                                <div role="listitem" class="u-flex-no-shrink w-dyn-item">
+                                                    <div class="label-tag">Clustering</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-controls"><button id="work-prev" class="btn cc-previous">
+                                <div class="btn-arrow w-embed"><svg width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 8H2M2 8L7 3M2 8L7 13" stroke="currentColor" stroke-width="1.5" />
+                                    </svg></div>
+                                <div>Back</div>
+                            </button>
+                            <div id="work-scroll" class="swiper-scrollbar swiper-scrollbar-horizontal is-work">
+                                <div class="swiper-scrollbar-drag is-work"></div>
+                            </div><button id="work-next" class="btn cc-next">
+                                <div>Next</div>
+                                <div class="btn-arrow w-embed"><svg width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 8H14M14 8L9 3M14 8L9 13" stroke="currentColor" stroke-width="1.5" />
+                                    </svg></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row row-justify-center">
+                    <div class="col col-lg-10 col-sm-12">
+                        <div class="footer-inner"><a href="/" aria-current="page"
+                                class="profile-row cc-hover w-inline-block w--current">
+                                <div shadow="sm" class="pfp-img-wrap"><img src="media/jcns.jpg" loading="lazy"
+                                        alt="Jose Ocando" class="u-img-cover" /></div>
+                                <div class="profile-row-meta">
+                                    <div class="input-label">Data Scientist</div>
+                                    <div class="input-label">Backend Developer</div>
+                                </div>
+                            </a>
+                            <div class="footer-links">
+                                <a href="/about" class="nav-link cc-footer">About Me</a>
+                                <a href="mailto:jaylonnelsonsellers@gmail.com" class="nav-link cc-footer">Email</a>
+                                <a href="https://www.linkedin.com/in/jaylon-nelson-sellers/" class="nav-link cc-footer">LinkedIn</a>
+                                <a href="https://github.com/jaylon-nelson-sellers/My-Portfolio" class="nav-link cc-footer">Source Code</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="scripts/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.prod.website-files.com/66245c2c8b72c9616045fa9b/js/webflow.933736e96.js"
+        type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
-    <footer>
-      <div class="contact-links">
-          <a href="tel:+4253099012">Phone: (425)-309-9012</a>
-          <a href="mailto:jcns@uw.edu">Email: jcns@uw.edu</a>
-          <a href="https://github.com/JaylonSellers" target="_blank" rel="noopener noreferrer">Visit this website's repo</a>
-      </div>
-      <p>© 2024 Jaylon Nelson-Sellers. All rights reserved.</p>
-  </footer>
 
-  <script src="gsap.min.js"></script>
-  <script src="ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
+    <script>
+        // Step 1: Find the element with a class of ".nav" and save it in a variable.
+        const nav = document.querySelector('.nav-inner');
+
+        // Step 2: Find the element with a class of ".nav-bg" and save it in a variable.
+        const navBg = document.querySelector('.nav-bg');
+
+        // Step 3: Find all elements with a class of ".nav-flip" and save them in a variable.
+        const navFlips = document.querySelectorAll('.nav-flip');
+
+        // Step 4: When a user hovers on a nav-flip, get the nav-bg and append it inside of the nav-flip using GSAP Flip.
+        navFlips.forEach(navFlip => {
+            navFlip.addEventListener('mouseenter', () => {
+                const state = Flip.getState(navBg);
+
+                navFlip.appendChild(navBg);
+
+                Flip.from(state, {
+                    duration: .4,
+                    ease: 'power4.out'
+                });
+            });
+        });
+
+        // Step 5: Whenever a user navigates off of .nav, return the nav-bg back to its original position nested inside of the .nav.
+        nav.addEventListener('mouseleave', () => {
+            const state = Flip.getState(navBg);
+
+            nav.appendChild(navBg);
+
+            Flip.from(state, {
+                duration: .4,
+                ease: 'power4.out'
+            });
+        });
+    </script>
+
+    <script>
+        // Assuming GSAP and FlipPlugin are already initialized
+        document.querySelectorAll('.animated-btn').forEach(btn => {
+            // Adding hover event
+            btn.addEventListener('mouseenter', () => {
+                const btnBg = btn.querySelector('.btn-bg');
+                const arrowWrap = btn.querySelector('.arrow-wrap');
+
+                if (btnBg && arrowWrap) {
+                    const state = Flip.getState(btnBg);
+                    arrowWrap.appendChild(btnBg);
+                    Flip.from(state, {
+                        duration: .4,
+                        ease: 'power4.out',
+                    });
+                }
+            });
+
+            // Adding hover off event
+            btn.addEventListener('mouseleave', () => {
+                const btnBg = btn.querySelector('.btn-bg');
+
+                if (btnBg) {
+                    const state = Flip.getState(btnBg);
+                    btn.appendChild(btnBg);
+                    Flip.from(state, {
+                        duration: 0.4,
+                        ease: 'power4.out',
+                    });
+                }
+            });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        // Swiper Card Slider
+        const workSwiper = new Swiper('#work-slider', {
+            // Optional parameters
+            direction: 'horizontal',
+            a11y: {
+                slideRole: 'listitem',
+            },
+            allowTouchMove: true,
+            mousewheel: {
+                forceToAxis: true,
+            },
+            speed: 800,
+            spaceBetween: 8,
+            centeredSlides: true,
+            loop: false,
+            grabCursor: true,
+            watchSlidesProgress: true,
+            keyboard: {
+                enabled: true,
+            },
+            scrollbar: {
+                el: "#work-scroll",
+                dragClass: "swiper-scrollbar-drag is-work",
+                draggable: true,
+                hide: false,
+            },
+            slidesPerView: 1.5,
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+                1280: {
+                    slidesPerView: 5,
+                    spaceBetween: 56,
+                },
+                1560: {
+                    slidesPerView: 6,
+                    spaceBetween: 56,
+                },
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '#work-next',
+                prevEl: '#work-prev',
+            },
+        });
+    </script>
+
 </body>
+
 </html>
