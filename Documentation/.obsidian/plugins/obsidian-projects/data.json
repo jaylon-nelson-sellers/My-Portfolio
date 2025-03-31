@@ -1,0 +1,163 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {
+        "status": {
+          "options": [
+            "Next Up",
+            "In Progress",
+            "Test/Review",
+            "Done"
+          ]
+        },
+        "Priority": {}
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Admin",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 360
+              },
+              "path": {
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "path",
+              "due",
+              "status",
+              "tags",
+              "Priority"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Table",
+          "id": "28b873b4-141c-4154-ab18-4c163eb2fdfb",
+          "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "status",
+            "orderSyncField": "weight",
+            "columns": {
+              "Backlog": {
+                "weight": 0,
+                "records": [
+                  "Projects - Demo Project/Restructure Portfolio Structure.md",
+                  "Projects - Demo Project/What I Learned From Taking 15,000 Notes.md",
+                  "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md"
+                ]
+              },
+              "Next Up": {
+                "weight": 1
+              },
+              "In Progress": {
+                "weight": 2
+              },
+              "Test/Review": {
+                "weight": 3,
+                "records": []
+              },
+              "Done": {
+                "weight": 4,
+                "records": [
+                  "Admin/Fix bottom about me page.md"
+                ]
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Board",
+          "id": "f6903498-2da4-4c2d-8aa6-d3709adea16e",
+          "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month",
+            "dateField": "due",
+            "checkField": "published"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Calendar",
+          "id": "dbba4408-478c-4859-80e6-6d0c0e7bba50",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "coverField": "image"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Gallery",
+          "id": "18b68ce6-4bf2-4fb2-8eb0-f37113397b60",
+          "type": "gallery"
+        }
+      ],
+      "name": "Demo project",
+      "id": "02be7064-4b11-482f-8cc2-46592abef724",
+      "path": "Projects - Demo Project"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "default"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}
