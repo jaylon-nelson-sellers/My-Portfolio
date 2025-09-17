@@ -182,10 +182,10 @@
                             padding-bottom: var(--spacing-layout--section-padding-lg);
                         }
 
-                        .photo-grid {
-                            display: grid;
-                            gap: var(--spacing-layout--row-col-gap);
-                            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                        .photo-stack {
+                            display: flex;
+                            flex-direction: column;
+                            gap: clamp(2rem, 3vw, 4rem);
                         }
 
                         .photo-card {
@@ -194,15 +194,13 @@
                             overflow: hidden;
                             border-radius: 1.25rem;
                             background: var(--colors--neutral-01, #ffffff);
-                            box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.03), -3px 3px 3px rgba(0, 0, 0, 0.1), -1px 1px 2px rgba(0, 0, 0, 0.17), 0 0 1px rgba(0, 0, 0, 0.19);
-                            transition: transform .6s ease;
+                            box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.03), -3px 3px 3px rgba(0, 0, 0, 0.1), -1px 1px 2px rgba(0, 0, 0, 0.17), 0px 0px 1px rgba(0, 0, 0, 0.19);
                         }
 
                         .photo-card img {
                             width: 100%;
-                            height: 100%;
+                            height: auto;
                             display: block;
-                            object-fit: cover;
                             transition: transform .6s ease, filter .6s ease;
                         }
 
@@ -210,10 +208,10 @@
                             position: absolute;
                             inset: 0;
                             display: flex;
-                            align-items: center;
+                            align-items: flex-end;
                             justify-content: center;
-                            padding: 1.5rem;
-                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.75) 100%);
+                            padding: clamp(1.5rem, 2vw, 3rem);
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 40%, rgba(0, 0, 0, 0.75) 100%);
                             color: var(--colors--neutral-01, #ffffff);
                             text-align: center;
                             letter-spacing: 0.04em;
@@ -223,20 +221,20 @@
                             transition: opacity .6s ease;
                         }
 
-                        .photo-card:hover,
-                        .photo-card:focus-visible {
-                            transform: translateY(-6px);
-                        }
-
                         .photo-card:hover img,
                         .photo-card:focus-visible img {
-                            transform: scale(1.05);
+                            transform: scale(1.01);
                             filter: brightness(0.55);
                         }
 
                         .photo-card:hover .photo-overlay,
                         .photo-card:focus-visible .photo-overlay {
                             opacity: 1;
+                        }
+
+                        .photo-card:focus-visible {
+                            outline: 3px solid var(--colors--primary, currentColor);
+                            outline-offset: 4px;
                         }
 
                         @media (prefers-reduced-motion: reduce) {
@@ -312,13 +310,13 @@
                                         <h2 class="text-xl u-mb-0">Moments in Order</h2>
                                         <p class="text-lg u-text-darkgray">Scroll through each capture in the sequence they were taken. Hover to reveal the story behind the frame, or tap to open the full image.</p>
                                     </div>
-                                    <div class="photo-grid">
+                                    <div class="photo-stack">
                                         <a class="photo-card" href="../media/P0.jpeg" target="_blank" rel="noopener">
                                             <img src="../media/P0.jpeg" loading="lazy" alt="Jaylon in uniform with trees in the background."/>
                                             <span class="photo-overlay"><span>Service in the Sun</span></span>
                                         </a>
                                         <a class="photo-card" href="../media/P1.jpeg" target="_blank" rel="noopener">
-                                            <img src="../media/P1.jpeg" loading="lazy" alt="Two people hugging in a park."/>
+                                            <img src="../media/P1.jpeg" loading="lazy" alt="Two people embracing in a park."/>
                                             <span class="photo-overlay"><span>Quiet Reunion</span></span>
                                         </a>
                                         <a class="photo-card" href="../media/P2.jpeg" target="_blank" rel="noopener">
@@ -354,7 +352,7 @@
                                             <span class="photo-overlay"><span>Dusk Walk</span></span>
                                         </a>
                                         <a class="photo-card" href="../media/P10.jpeg" target="_blank" rel="noopener">
-                                            <img src="../media/P10.jpeg" loading="lazy" alt="Portrait of Jaylon wearing a cap in front of a textured wall."/>
+                                            <img src="../media/P10.jpeg" loading="lazy" alt="Portrait of Jaylon wearing a cap against a stone wall."/>
                                             <span class="photo-overlay"><span>Spring Portrait</span></span>
                                         </a>
                                     </div>
