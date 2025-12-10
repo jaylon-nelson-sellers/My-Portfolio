@@ -1,3 +1,10 @@
+# Date: 12/10/25
+## Week 1, Day 6
+- Read A+ Chapter 8: Mass Storage Devices
+- Completed Reading, Flashcards, and Quiz for Chapter 7: Power Supplies
+    - Quiz Results: 21/25 **B**
+- Next Step: Start Flashcards for Chapter 8. Goal Complete by the 12th
+
 # Date: 12/7/25
 ## Week 1, Day 3
 - Completed A+ Chapter 6: Motherboards in flashcards
