@@ -1,3 +1,14 @@
+# Date 12/11/25
+## Week 2
+- Completed Flashcards for Chapter 9: Mass Storage Devices 
+    - (First time completing a chapter in One day)
+    - Anki: 387 cards, 1.2h
+- Started Chapter 10: Essential Peripherals
+    - Created Flashcards
+    - Reading/Listening to tonight
+- Next step> Going through 70ish flashcards 
+- Take weekly review test
+
 # Date: 12/10/25
 ## Week 1, Day 6
 - Read A+ Chapter 8: Mass Storage Devices
