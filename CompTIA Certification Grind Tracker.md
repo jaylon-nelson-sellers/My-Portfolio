@@ -1,3 +1,14 @@
+# Date 12/15/25
+## Week 2, Day 4
+- Completed Flashcards for Chapter 10: Essential Peripherals
+    - Anki: 367 cards, 1h
+- Started Chapter 11: Installing and Upgrading Operating Systems
+    - Read Chapter
+    - Listened to Audio Summary
+    - Created Flashcards (55)
+    - Major Goal: Tomorrow, in increments of 10m, I will completed all flashcards in 1 day.
+
+
 # Date 12/11/25
 ## Week 2
 - Completed Flashcards for Chapter 9: Mass Storage Devices 
